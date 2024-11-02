@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Alymbek Shop</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">
+                        <img class="burger-menu" src="../img/Hamburger_icon.svg.webp" alt="">
+                    </i></a>
+
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../../index.html">Главная</a></li>
+                    <li><a href="#">Котегория</a></li>
+                    <li><a href="../components/cart.html">Корзина</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="../../index.html">Главная</a></li>
+            <li><a href="#">Котегория</a></li>
+            <li><a href="../components/cart.html">Корзина</a></li>
+        </ul>
+
+
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <div class="allProducts-category">
+                    <div class="btns"></div>
+                    <div class="cards-category">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contacts">
+            <p class="help, item">помощ</p>
+            <p class="gmail, item">example@gmail.com</p>
+            <p class="number, item">0504204413</p>
+        </div>
+    </footer>
+
+    
+    <script type="module" src="../js/category.js"></script>
+    <script src="../libs/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+
+</body>
+
+</html>
